@@ -164,6 +164,48 @@ function renderMenu(filter){
   host.innerHTML = any ? h : '<div class="empty"><b>Nothing found</b>No menu item matches \u201c'+esc(filter)+'\u201d.</div>';
 }
 var learnTab='features';
+var FIELD_FIXES=[
+ {q:"Buttons or the Q menu suddenly do nothing",
+  cause:"Control lock switched on \u2014 easy to trigger with a stray thumb or a press against your bag. A key/lock icon shows on the display when it's active.",
+  fix:"Press and hold MENU/OK to toggle the lock back off.",
+  where:"Narrow what it locks under SETUP \u2192 BUTTON/DIAL SETTING \u2192 LOCK."},
+ {q:"Shutter won't fire / camera won't take the shot",
+  cause:"In AF-S the camera won't release until focus locks; or there's no card and \u201cshoot without card\u201d is off; or the lens isn't fully seated (or an adapted lens with \u201cshoot without lens\u201d off); or the card is full or write-protected.",
+  fix:"Confirm focus locks (green box) or switch to MF; check a card is in and not full/locked; reseat the lens.",
+  where:"BUTTON/DIAL SETTING \u2192 SHOOT WITHOUT CARD / SHOOT WITHOUT LENS; AF/MF \u2192 RELEASE/FOCUS PRIORITY."},
+ {q:"Autofocus hunts or won't lock in the dark",
+  cause:"Not enough light or contrast for AF \u2014 normal for stars and very dark scenes.",
+  fix:"Switch the focus mode to M and focus manually on a bright star using Focus Check (magnify) or the distance scale near infinity.",
+  where:"Focus-mode selector on the front \u2192 M; AF/MF \u2192 MF ASSIST / FOCUS CHECK."},
+ {q:"Screen is too dark to compose at night",
+  cause:"In Manual exposure the live view previews your (dark) exposure, so framing a nightscape is hard.",
+  fix:"Turn on NATURAL LIVE VIEW, or turn OFF \u201cPREVIEW EXP./WB IN MANUAL MODE\u201d so the screen brightens to help you frame; raise EVF/LCD brightness.",
+  where:"SCREEN SETTING \u2192 NATURAL LIVE VIEW and PREVIEW EXP./WB IN MANUAL MODE."},
+ {q:"A long exposure \u201changs\u201d or takes twice as long",
+  cause:"LONG EXPOSURE NR shoots a matching dark frame after the exposure (a 4-min shot needs ~4 more minutes). It's working, not frozen.",
+  fix:"Wait it out for cleaner shadows, or turn LONG EXPOSURE NR off to shoot back-to-back.",
+  where:"PHOTO \u2192 IMAGE QUALITY SETTING \u2192 LONG EXPOSURE NR."},
+ {q:"Photos come out cropped or lower-res than expected",
+  cause:"35mm FORMAT MODE (or another crop) is on, or IMAGE SIZE was changed.",
+  fix:"Turn 35mm FORMAT MODE off and check IMAGE SIZE.",
+  where:"PHOTO \u2192 SHOOTING SETTING \u2192 35mm FORMAT MODE; IMAGE QUALITY SETTING \u2192 IMAGE SIZE."},
+ {q:"Card error / \u201ccan't record\u201d",
+  cause:"Card write-protect switch, a card formatted on a computer, or a failing card.",
+  fix:"Check the lock switch on the card; format the card IN THE CAMERA (never on a computer); try the other slot or card.",
+  where:"SETUP \u2192 USER SETTING \u2192 FORMAT."},
+ {q:"The dials change the wrong thing",
+  cause:"Command-dial roles were reassigned, or the aperture ring is left on A/C.",
+  fix:"Check the command-dial assignments and the aperture ring position.",
+  where:"SETUP \u2192 BUTTON/DIAL SETTING \u2192 COMMAND DIAL SETTING."},
+ {q:"Won't connect to your phone",
+  cause:"Firmware 2.x moved pairing to the FUJIFILM XApp; the old Camera Remote no longer connects.",
+  fix:"Install/use XApp, then pair via Bluetooth: DISP/BACK \u2192 Bluetooth \u2192 PAIRING.",
+  where:"SETUP \u2192 CONNECTION SETTING \u2192 Bluetooth/SMARTPHONE SETTING."},
+ {q:"Everything's misconfigured and you're not sure what changed",
+  cause:"Accumulated setting changes.",
+  fix:"SET-UP RESET restores settings without erasing photos or your C1\u2013C6 custom banks. (INITIALIZE resets more.)",
+  where:"SETUP \u2192 USER SETTING \u2192 RESET."}
+];
 function renderLearn(filter){
   filter=norm(filter||''); var host=$('#learnList'); var h='';
   if(learnTab==='features'){
@@ -176,6 +218,16 @@ function renderLearn(filter){
   } else if(learnTab==='film'){
     D.filmSims.filter(function(s){ return !filter || norm(s.name+' '+s.best+' '+s.desc).indexOf(filter)>-1; }).forEach(function(s){
       h+='<div class="sim"><div class="sn">'+esc(s.name)+' <span class="sb">'+esc(s.best)+'</span></div><div class="sd">'+esc(s.desc)+'</div></div>';
+    });
+  } else if(learnTab==='fixes'){
+    var fx=FIELD_FIXES.filter(function(x){ return !filter || norm(x.q+' '+x.cause+' '+x.fix+' '+x.where).indexOf(filter)>-1; });
+    if(!fx.length){ host.innerHTML='<div class="empty"><b>No fix found</b>Try another word.</div>'; return; }
+    h+='<p class="fxintro">Non-obvious things that go wrong in the field \u2014 with the fix and where to look. Works with no signal.</p>';
+    fx.forEach(function(x){
+      h+='<div class="fixcard"><h3>'+esc(x.q)+'</h3>'+
+         '<div class="fxline"><span>Likely cause</span>'+esc(x.cause)+'</div>'+
+         '<div class="fxline fix"><span>Fix</span>'+esc(x.fix)+'</div>'+
+         '<div class="fxline"><span>Where</span>'+esc(x.where)+'</div></div>';
     });
   } else {
     var fw=D.firmware;

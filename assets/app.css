@@ -258,3 +258,12 @@ h1.screen{font-size:24px;letter-spacing:-.01em;font-weight:680;margin:14px 0 2px
 .appver{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--faint);
   border:1px solid var(--line);border-radius:6px;padding:6px 10px;display:inline-block;margin:2px 0 16px}
 .appver b{color:var(--green);font-weight:600}
+
+/* ---------- Field Fixes ---------- */
+.fxintro{color:var(--muted);font-size:13.5px;line-height:1.5;margin:2px 0 14px}
+.fixcard{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:15px 16px 6px;margin-bottom:12px}
+.fixcard h3{margin:0 0 11px;font-size:15px;color:var(--ink);line-height:1.35}
+.fxline{font-size:13.5px;line-height:1.5;margin-bottom:11px;color:var(--ink-dim)}
+.fxline>span{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.fxline.fix{color:var(--ink)}
+.fxline.fix>span{color:var(--green)}
