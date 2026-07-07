@@ -8,6 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Fieldstop">
 <meta name="description" content="Fieldstop — an offline, installable field guide and use-case advisor for your camera. Ask in plain language, get camera-ready settings. Works with no signal.">
+<meta name="fieldstop-version" content="1.0.0">
 <link rel="manifest" href="./fieldstop.webmanifest">
 <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="./icons/icon-180.png">
@@ -71,13 +72,14 @@
       <input id="menuSearch" type="text" placeholder="Search all menu items…" autocomplete="off">
     </div>
     <div class="segwrap" id="menuSeg"></div>
-    <div class="hint"><span class="exp"></span>green dot = explained in plain language (tap it)</div>
+    <div class="hint"><span class="exp"></span>tap any item for its manual page &middot; green dot = full plain-language explanation</div>
     <div id="menuList"></div>
   </section>
 
   <section class="view" id="view-learn">
     <h1 class="screen">Learn</h1>
     <p class="screen-sub">Features explained, film simulations, and firmware notes.</p>
+    <div class="appver" id="appVer"></div>
     <div class="subtabs">
       <button class="subtab on" data-learn="features">Features</button>
       <button class="subtab" data-learn="film">Film sims</button>

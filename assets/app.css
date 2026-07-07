@@ -253,3 +253,8 @@ h1.screen{font-size:24px;letter-spacing:-.01em;font-weight:680;margin:14px 0 2px
 .sysrow .sm{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .sysrow .sl{font-size:16px;font-weight:640;margin-top:3px}
 .sysrow .tick{font-family:var(--mono);color:var(--green);font-size:16px;flex:none}
+
+/* ---------- App version tag ---------- */
+.appver{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--faint);
+  border:1px solid var(--line);border-radius:6px;padding:6px 10px;display:inline-block;margin:2px 0 16px}
+.appver b{color:var(--green);font-weight:600}

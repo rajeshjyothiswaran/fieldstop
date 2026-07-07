@@ -1,5 +1,7 @@
 /* Fieldstop — offline service worker */
-var CACHE = 'fieldstop-v2';
+/* VERSION is kept in parity with the <meta name="fieldstop-version"> in fieldstop.html by deploy.sh */
+var VERSION = '1.0.0';
+var CACHE = 'fieldstop-v' + VERSION;
 var ASSETS = [
   './','./index.html','./fieldstop.html',
   './assets/app.css','./assets/app.js',

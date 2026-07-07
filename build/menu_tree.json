@@ -69,12 +69,7 @@
      {
       "name": "SHARPNESS",
       "page": 138
-     }
-    ]
-   },
-   {
-    "name": "IMAGE QUALITY SETTING",
-    "items": [
+     },
      {
       "name": "HIGH ISO NR",
       "page": 138
@@ -96,11 +91,11 @@
       "page": 139
      },
      {
-      "name": "xF PIXEL MAPPING",
+      "name": "PIXEL MAPPING",
       "page": 140
      },
      {
-      "name": "x EDIT/SAVE CUSTOM SETTING",
+      "name": "EDIT/SAVE CUSTOM SETTING",
       "page": 140
      },
      {
@@ -137,11 +132,11 @@
       "page": 148
      },
      {
-      "name": "AF POINT DISPLAYyz",
+      "name": "AF POINT DISPLAY",
       "page": 149
      },
      {
-      "name": "xF WRAP FOCUS POINT",
+      "name": "WRAP FOCUS POINT",
       "page": 149
      },
      {
@@ -157,7 +152,7 @@
       "page": 150
      },
      {
-      "name": "g FACE/EYE DETECTION SETTING",
+      "name": "FACE/EYE DETECTION SETTING",
       "page": 151
      },
      {
@@ -185,11 +180,11 @@
       "page": 157
      },
      {
-      "name": "xF INSTANT AF SETTING",
+      "name": "INSTANT AF SETTING",
       "page": 157
      },
      {
-      "name": "xF DEPTH-OF-FIELD SCALE",
+      "name": "DEPTH-OF-FIELD SCALE",
       "page": 158
      },
      {
@@ -197,7 +192,7 @@
       "page": 158
      },
      {
-      "name": "xF AF RANGE LIMITER",
+      "name": "AF RANGE LIMITER",
       "page": 159
      },
      {
@@ -322,7 +317,7 @@
       "page": 176
      },
      {
-      "name": "F SELF-TIMER",
+      "name": "SELF-TIMER",
       "page": 177
      },
      {
@@ -346,23 +341,23 @@
       "page": 185
      },
      {
-      "name": "F PHOTOMETRY",
+      "name": "PHOTOMETRY",
       "page": 185
      },
      {
-      "name": "F FLICKERLESS S.S. SETTING",
+      "name": "FLICKERLESS S.S. SETTING",
       "page": 185
      },
      {
-      "name": "F IS MODE",
+      "name": "IS MODE",
       "page": 186
      },
      {
-      "name": "F IS MODE BOOST",
+      "name": "IS MODE BOOST",
       "page": 186
      },
      {
-      "name": "F ISO",
+      "name": "ISO",
       "page": 187
      },
      {
@@ -378,11 +373,11 @@
       "page": 188
      },
      {
-      "name": "MOVIE OPTIMIZED CONTROL oL",
+      "name": "MOVIE OPTIMIZED CONTROL",
       "page": 189
      },
      {
-      "name": "F REC FRAME INDICATOR",
+      "name": "REC FRAME INDICATOR",
       "page": 189
      },
      {
@@ -390,15 +385,15 @@
       "page": 190
      },
      {
-      "name": "F EDIT/SAVE CUSTOM SETTING",
+      "name": "EDIT/SAVE CUSTOM SETTING",
       "page": 191
      },
      {
-      "name": "F AUTO UPDATE CUSTOM SETTING",
+      "name": "AUTO UPDATE CUSTOM SETTING",
       "page": 191
      },
      {
-      "name": "xFWIRELESS COMMUNICATION",
+      "name": "WIRELESS COMMUNICATION",
       "page": 191
      }
     ]
@@ -407,35 +402,35 @@
     "name": "IMAGE QUALITY SETTING",
     "items": [
      {
-      "name": "FFILM SIMULATION",
+      "name": "FILM SIMULATION",
       "page": 192
      },
      {
-      "name": "FMONOCHROMATIC COLOR",
+      "name": "MONOCHROMATIC COLOR",
       "page": 192
      },
      {
-      "name": "FDYNAMIC RANGE",
+      "name": "DYNAMIC RANGE",
       "page": 193
      },
      {
-      "name": "FWHITE BALANCE",
+      "name": "WHITE BALANCE",
       "page": 193
      },
      {
-      "name": "FTONE CURVE",
+      "name": "TONE CURVE",
       "page": 193
      },
      {
-      "name": "FCOLOR",
+      "name": "COLOR",
       "page": 193
      },
      {
-      "name": "FSHARPNESS",
+      "name": "SHARPNESS",
       "page": 194
      },
      {
-      "name": "FHIGH ISO NR",
+      "name": "HIGH ISO NR",
       "page": 194
      },
      {
@@ -443,15 +438,15 @@
       "page": 194
      },
      {
-      "name": "xF PIXEL MAPPING",
+      "name": "PIXEL MAPPING",
       "page": 194
      },
      {
-      "name": "FPERIPHERAL LIGHT CORRECTION",
+      "name": "PERIPHERAL LIGHT CORRECTION",
       "page": 195
      },
      {
-      "name": "xFMOUNT ADAPTOR SETTING",
+      "name": "MOUNT ADAPTOR SETTING",
       "page": 195
      }
     ]
@@ -460,59 +455,59 @@
     "name": "AF/MF SETTING",
     "items": [
      {
-      "name": "FFOCUS AREA",
+      "name": "FOCUS AREA",
       "page": 196
      },
      {
-      "name": "FAF MODE",
+      "name": "AF MODE",
       "page": 196
      },
      {
-      "name": "FAF-C CUSTOM SETTING",
+      "name": "AF-C CUSTOM SETTING",
       "page": 197
      },
      {
-      "name": "xFWRAP FOCUS POINT",
+      "name": "WRAP FOCUS POINT",
       "page": 197
      },
      {
-      "name": "FgFACE/EYE DETECTION SETTING",
+      "name": "FACE/EYE DETECTION SETTING",
       "page": 198
      },
      {
-      "name": "F SUBJECT DETECTION SETTING",
+      "name": "SUBJECT DETECTION SETTING",
       "page": 198
      },
      {
-      "name": "F AF+MF",
+      "name": "AF+MF",
       "page": 199
      },
      {
-      "name": "FMF ASSIST",
+      "name": "MF ASSIST",
       "page": 199
      },
      {
-      "name": "FINTERLOCK MF ASSIST & FOCUS RING",
+      "name": "INTERLOCK MF ASSIST & FOCUS RING",
       "page": 199
      },
      {
-      "name": "FFOCUS CHECK",
+      "name": "FOCUS CHECK",
       "page": 200
      },
      {
-      "name": "xFINSTANT AF SETTING",
+      "name": "INSTANT AF SETTING",
       "page": 200
      },
      {
-      "name": "xFDEPTH-OF-FIELD SCALE",
+      "name": "DEPTH-OF-FIELD SCALE",
       "page": 200
      },
      {
-      "name": "xFAF RANGE LIMITER",
+      "name": "AF RANGE LIMITER",
       "page": 200
      },
      {
-      "name": "FTOUCH SCREEN MODE",
+      "name": "TOUCH SCREEN MODE",
       "page": 201
      },
      {
@@ -537,7 +532,7 @@
       "page": 204
      },
      {
-      "name": "MICLEVELLIMITER",
+      "name": "MIC LEVEL LIMITER",
       "page": 204
      },
      {
@@ -594,7 +589,7 @@
   "key": "Playback",
   "categories": [
    {
-    "name": "PLAY BACK MENU",
+    "name": "PLAYBACK MENU",
     "items": [
      {
       "name": "SWITCH SLOT",
@@ -627,12 +622,7 @@
      {
       "name": "PROTECT",
       "page": 226
-     }
-    ]
-   },
-   {
-    "name": "PLAY BACK MENU",
-    "items": [
+     },
      {
       "name": "IMAGE ROTATE",
       "page": 227
@@ -654,7 +644,7 @@
       "page": 231
      },
      {
-      "name": "xFWIRELESSCOMMUNICATION",
+      "name": "WIRELESS COMMUNICATION",
       "page": 233
      },
      {
@@ -685,7 +675,7 @@
       "page": 304
      },
      {
-      "name": "bAREA SETTING",
+      "name": "AREA SETTING",
       "page": 305
      },
      {
@@ -697,15 +687,11 @@
       "page": 306
      },
      {
-      "name": "Qa",
+      "name": "言語/LANG.",
       "page": 307
      },
      {
-      "name": "xMY MENU SETTING",
-      "page": 307
-     },
-     {
-      "name": "FMY MENU SETTING",
+      "name": "MY MENU SETTING",
       "page": 307
      },
      {
@@ -746,23 +732,15 @@
       "page": 312
      },
      {
-      "name": "FREC START/STOP VOLUME",
+      "name": "REC START/STOP VOLUME",
       "page": 312
      },
      {
-      "name": "tt ELECTRONIC SHUTTER VOLUME",
+      "name": "ELECTRONIC SHUTTER VOLUME",
       "page": 312
      },
      {
-      "name": "tt ELECTRONIC SHUTTER SOUND",
-      "page": 313
-     },
-     {
-      "name": "s ELECTRONIC SHUTTER VOLUME",
-      "page": 313
-     },
-     {
-      "name": "s ELECTRONIC SHUTTER SOUND",
+      "name": "ELECTRONIC SHUTTER SOUND",
       "page": 313
      },
      {
@@ -869,12 +847,7 @@
      {
       "name": "LOCATION INFO",
       "page": 326
-     }
-    ]
-   },
-   {
-    "name": "SCREEN SETTING",
-    "items": [
+     },
      {
       "name": "SUB MONITOR SETTING",
       "page": 326
@@ -884,11 +857,7 @@
       "page": 329
      },
      {
-      "name": "xQ MENU BACKGROUND",
-      "page": 329
-     },
-     {
-      "name": "FQ MENU BACKGROUND",
+      "name": "Q MENU BACKGROUND",
       "page": 329
      }
     ]
@@ -901,11 +870,7 @@
       "page": 330
      },
      {
-      "name": "xEDIT/SAVE QUICK MENU",
-      "page": 330
-     },
-     {
-      "name": "FEDIT/SAVE QUICK MENU",
+      "name": "EDIT/SAVE QUICK MENU",
       "page": 330
      },
      {
@@ -917,7 +882,7 @@
       "page": 331
      },
      {
-      "name": "oS.S. OPERATION",
+      "name": "S.S. OPERATION",
       "page": 332
      },
      {
@@ -961,7 +926,7 @@
       "page": 335
      },
      {
-      "name": "aFn1 BUTTON SETTING",
+      "name": "Fn1 BUTTON SETTING",
       "page": 336
      },
      {
@@ -1011,11 +976,11 @@
       "page": 343
      },
      {
-      "name": "xCARD SLOT SETTING",
+      "name": "CARD SLOT SETTING",
       "page": 343
      },
      {
-      "name": "SELECT SLOT(xSEQUENTIAL)",
+      "name": "SELECT SLOT(SEQUENTIAL)",
       "page": 343
      },
      {

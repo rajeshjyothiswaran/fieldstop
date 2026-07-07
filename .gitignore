@@ -1,0 +1,4 @@
+# local version snapshots created by deploy.sh
+releases/
+# macOS cruft
+.DS_Store

@@ -7,7 +7,7 @@ Currently loaded: **FUJIFILM GFX100S II** (firmware 1.20, verified current as of
 ## What it does
 - **Ask** — describe the shot ("milky way over a mountain lake", "silky waterfall", "focus stack a foreground") and get a camera-ready setup: exact settings, why each one, the steps on the camera, and any hard "Watch" note. Runs entirely on-device — no live AI, no API key, no network.
 - **Setups** — 22 one-tap starting points, weighted toward landscape, nature and nightscape work (Milky Way, star trails, tracked astro, aurora, moonlit, blue-hour blends, seascape, woodland, autumn, panorama, focus-stacking…).
-- **Menu** — all 239 GFX100S II menu items exactly as they appear on the camera, with manual page numbers. A green dot means it's explained in plain language — tap it.
+- **Menu** — all 234 GFX100S II menu items exactly as they appear on the camera, with manual page numbers. A green dot means it's explained in plain language — tap it.
 - **Learn** — 45 feature explanations, all 12 film simulations, and the firmware 1.20 change notes.
 
 The advisor is a deterministic on-device matcher over a curated knowledge base built from your Owner's Manual (BL00005287-202 EN) and New Features Guide v1.20. It passed 22/22 plain-language routing tests across all genres.
@@ -45,18 +45,33 @@ The whole point of the multi-system design: a new body is just a data file, not 
 
 The header switcher and everything else updates automatically. Menu→feature "green dot" links use a Fuji-specific alias map in `app.js`; a different brand can get its own map there.
 
+
+## Versioning & deploy (the `deploy.sh` workflow)
+Fieldstop carries a single version number, shown in the app on the **Learn** tab. It lives in one place — the `<meta name="fieldstop-version">` tag in `fieldstop.html` — and the service worker's cache name is derived from it, so **bumping the version is what forces installed apps to refresh their offline cache**.
+
+Deploy with the script instead of manual git commands:
+```
+./deploy.sh          # re-deploy at the current version
+./deploy.sh 1.1.0    # set a new version, then deploy
+```
+It (1) writes the version into `fieldstop.html` and `fieldstop-sw.js` and **fails if they don't match** (parity gate), (2) copies a snapshot of the deployable site into `releases/v<version>/` (a local archive, gitignored — so versioned copies live here, not in Downloads), and (3) commits and pushes to GitHub Pages.
+
+First time only, make it executable: `chmod +x deploy.sh` (or run it as `bash deploy.sh`).
+
 ## Files
 ```
 index.html                  root redirect → fieldstop.html (for GitHub Pages)
 fieldstop.html              app shell + views (entry point)
 fieldstop.webmanifest       install metadata
-fieldstop-sw.js             offline cache (cache-first)
+fieldstop-sw.js             offline cache (cache-first); version in parity with the app
+deploy.sh                   version-sync + snapshot + commit + push
+releases/                   local per-version snapshots (gitignored)
 assets/app.css              styles (instrument-panel theme)
 assets/app.js               routing, advisor matcher, system switcher
 assets/systems/gfx100sii.js the GFX100S II knowledge base (generated)
 icons/                      app icons
 build/build_data.py         regenerates the GFX100S II module
-build/menu_tree.json        parsed 239-item menu tree
+build/menu_tree.json        parsed menu tree (234 items)
 ```
 Edit content in `build/build_data.py`, then run `python3 build/build_data.py` to regenerate the module. Don't hand-edit the generated file.
 

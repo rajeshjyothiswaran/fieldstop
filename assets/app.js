@@ -127,6 +127,14 @@ function openFeature(id){
   if(f.page){ h+='<div class="pageref">Owner\u2019s Manual \u2014 <b>p.'+f.page+'</b></div>'; }
   showSheet(h);
 }
+function openMenuItem(d){
+  var loc = d.group + ' \u203a ' + d.cat;
+  var h='<div class="grab"></div><div class="fm">'+esc(loc)+'</div><h2>'+esc(d.name)+'</h2>';
+  h+='<div class="sect">On the camera</div><div class="body">Find it under <b>'+esc(d.cat)+'</b> \u2192 '+esc(d.name)+'.</div>';
+  h+='<div class="sect">Plain-language explanation</div><div class="body" style="color:var(--muted)">Not written up for this item yet \u2014 the manual page below has the full description. (Items with a green dot in the list have an in-app explanation.)</div>';
+  if(d.page && d.page!=='0'){ h+='<div class="pageref">Owner\u2019s Manual \u2014 <b>p.'+esc(d.page)+'</b></div>'; }
+  showSheet(h);
+}
 function renderRecipes(){
   var h=''; D.recipes.forEach(function(r){
     h+='<button class="recipe" data-scen="'+r.scenario+'"><div class="g">'+esc(r.genre)+'</div><div class="l">'+esc(r.line)+'</div><div class="arw">Open setup \u203a</div></button>';
@@ -148,7 +156,7 @@ function renderMenu(filter){
       h+='<div class="cat'+(filter?' open':'')+'"><button class="cat-h"><span class="nm">'+esc(cat.name)+(filter?' \u00b7 '+esc(g.key):'')+'</span><span class="ct">'+items.length+'</span><svg class="cv" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button><div class="cat-body">';
       items.forEach(function(it){
         var fid=featForMenuItem(it.name);
-        h+='<button class="mi'+(fid?' has':'')+'" '+(fid?('data-feat="'+fid+'"'):'')+'>'+(fid?'<span class="exp"></span>':'<span class="gap"></span>')+'<span class="nm">'+esc(it.name)+'</span><span class="pg">p.'+it.page+'</span></button>';
+        h+='<button class="mi'+(fid?' has':'')+'" '+(fid?('data-feat="'+fid+'" '):'')+'data-name="'+esc(it.name)+'" data-cat="'+esc(cat.name)+'" data-group="'+esc(g.key)+'" data-page="'+it.page+'">'+(fid?'<span class="exp"></span>':'<span class="gap"></span>')+'<span class="nm">'+esc(it.name)+'</span><span class="pg">p.'+it.page+'</span></button>';
       });
       h+='</div></div>';
     });
@@ -219,6 +227,8 @@ function setView(name){
 /* ---------------- Init ---------------- */
 function init(){
   if(!SYS.length){ document.body.innerHTML='<p style="color:#ccc;font-family:monospace;padding:40px">No camera data module loaded.</p>'; return; }
+  var vm=document.querySelector('meta[name="fieldstop-version"]');
+  var av=$('#appVer'); if(av && vm){ av.innerHTML='ƒieldstop <b>v'+vm.content+'</b>'; }
   var start = restore();
   D = SYS.filter(function(s){return s.id===start;})[0] || SYS[0];
   indexSystem(); updateHeader(); renderAll();
@@ -236,7 +246,7 @@ function init(){
   $('#menuSeg').addEventListener('click',function(e){ var b=e.target.closest('.seg'); if(!b)return; curGroup=b.dataset.group; renderSeg(); $('#menuSearch').value=''; renderMenu(''); });
   $('#menuSearch').addEventListener('input',function(){ renderMenu(this.value); });
   $('#menuList').addEventListener('click',function(e){
-    var mi=e.target.closest('.mi[data-feat]'); if(mi){ openFeature(mi.dataset.feat); return; }
+    var mi=e.target.closest('.mi'); if(mi){ if(mi.dataset.feat){ openFeature(mi.dataset.feat); } else { openMenuItem(mi.dataset); } return; }
     var ch=e.target.closest('.cat-h'); if(ch){ ch.parentNode.classList.toggle('open'); }
   });
 
