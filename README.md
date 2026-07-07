@@ -46,6 +46,14 @@ The whole point of the multi-system design: a new body is just a data file, not 
 The header switcher and everything else updates automatically. Menu→feature "green dot" links use a Fuji-specific alias map in `app.js`; a different brand can get its own map there.
 
 
+
+## Camera systems
+Fieldstop is multi-system: each camera body is a drop-in data module in `assets/systems/`, and the header wordmark opens a picker to switch between them (your choice persists). Currently included:
+- **FUJIFILM GFX100S** (209 menu items, firmware 2.13) — default
+- **FUJIFILM GFX100S II** (234 menu items, firmware 1.20)
+
+The GFX100S module is adapted for its real differences from the II: ISO 100 base, Face/Eye AF (no AI subject detection), 19 film simulations (no REALA ACE), and GFX100S manual page numbers.
+
 ## Versioning & deploy (the `deploy.sh` workflow)
 Fieldstop carries a single version number, shown in the app on the **Learn** tab. It lives in one place — the `<meta name="fieldstop-version">` tag in `fieldstop.html` — and the service worker's cache name is derived from it, so **bumping the version is what forces installed apps to refresh their offline cache**.
 
@@ -68,6 +76,7 @@ deploy.sh                   version-sync + snapshot + commit + push
 releases/                   local per-version snapshots (gitignored)
 assets/app.css              styles (instrument-panel theme)
 assets/app.js               routing, advisor matcher, system switcher
+assets/systems/gfx100s.js      GFX100S module (default)
 assets/systems/gfx100sii.js the GFX100S II knowledge base (generated)
 icons/                      app icons
 build/build_data.py         regenerates the GFX100S II module

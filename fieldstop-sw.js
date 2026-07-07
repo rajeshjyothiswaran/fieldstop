@@ -1,10 +1,11 @@
 /* Fieldstop — offline service worker */
 /* VERSION is kept in parity with the <meta name="fieldstop-version"> in fieldstop.html by deploy.sh */
-var VERSION = '1.0.0';
+var VERSION = '1.1.0';
 var CACHE = 'fieldstop-v' + VERSION;
 var ASSETS = [
   './','./index.html','./fieldstop.html',
   './assets/app.css','./assets/app.js',
+  './assets/systems/gfx100s.js',
   './assets/systems/gfx100sii.js',
   './fieldstop.webmanifest',
   './icons/icon.svg','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-180.png','./icons/icon-maskable-512.png'

@@ -1,0 +1,947 @@
+[
+ {
+  "group": "Photo Menus",
+  "key": "Photo",
+  "categories": [
+   {
+    "name": "IMAGE QUALITY SETTING",
+    "items": [
+     {
+      "name": "IMAGE SIZE",
+      "page": 108
+     },
+     {
+      "name": "IMAGE QUALITY",
+      "page": 109
+     },
+     {
+      "name": "RAW RECORDING",
+      "page": 110
+     },
+     {
+      "name": "FILM SIMULATION",
+      "page": 111
+     },
+     {
+      "name": "MONOCHROMATIC COLOR",
+      "page": 113
+     },
+     {
+      "name": "GRAIN EFFECT",
+      "page": 113
+     },
+     {
+      "name": "COLOR CHROME EFFECT",
+      "page": 113
+     },
+     {
+      "name": "COLOR CHROME FX BLUE",
+      "page": 114
+     },
+     {
+      "name": "SMOOTH SKIN EFFECT",
+      "page": 114
+     },
+     {
+      "name": "DYNAMIC RANGE",
+      "page": 115
+     },
+     {
+      "name": "D RANGE PRIORITY",
+      "page": 116
+     },
+     {
+      "name": "WHITE BALANCE",
+      "page": 117
+     },
+     {
+      "name": "TONE CURVE",
+      "page": 121
+     },
+     {
+      "name": "COLOR",
+      "page": 121
+     },
+     {
+      "name": "SHARPNESS",
+      "page": 121
+     },
+     {
+      "name": "HIGH ISO NR",
+      "page": 122
+     },
+     {
+      "name": "CLARITY",
+      "page": 122
+     },
+     {
+      "name": "LONG EXPOSURE NR",
+      "page": 122
+     },
+     {
+      "name": "LENS MODULATION OPTIMIZER",
+      "page": 123
+     },
+     {
+      "name": "COLOR SPACE",
+      "page": 123
+     },
+     {
+      "name": "PIXEL MAPPING",
+      "page": 124
+     },
+     {
+      "name": "EDIT/SAVE CUSTOM SETTING",
+      "page": 124
+     },
+     {
+      "name": "MOUNT ADAPTOR SETTING",
+      "page": 125
+     }
+    ]
+   },
+   {
+    "name": "AF/MF SETTING",
+    "items": [
+     {
+      "name": "FOCUS AREA",
+      "page": 128
+     },
+     {
+      "name": "AF MODE",
+      "page": 128
+     },
+     {
+      "name": "AF-C CUSTOM SETTINGS",
+      "page": 129
+     },
+     {
+      "name": "STORE AF MODE BY ORIENTATION",
+      "page": 132
+     },
+     {
+      "name": "AF POINT DISPLAY",
+      "page": 132
+     },
+     {
+      "name": "NUMBER OF FOCUS POINTS",
+      "page": 133
+     },
+     {
+      "name": "PRE-AF",
+      "page": 133
+     },
+     {
+      "name": "AF ILLUMINATOR",
+      "page": 133
+     },
+     {
+      "name": "FACE/EYE DETECTION SETTING",
+      "page": 134
+     },
+     {
+      "name": "AF+MF",
+      "page": 136
+     },
+     {
+      "name": "MF ASSIST",
+      "page": 137
+     },
+     {
+      "name": "FOCUS CHECK",
+      "page": 137
+     },
+     {
+      "name": "INTERLOCK SPOT AE & FOCUS AREA",
+      "page": 138
+     },
+     {
+      "name": "INSTANT AF SETTING",
+      "page": 138
+     },
+     {
+      "name": "DEPTH-OF-FIELD SCALE",
+      "page": 139
+     },
+     {
+      "name": "RELEASE/FOCUS PRIORITY",
+      "page": 139
+     },
+     {
+      "name": "AF RANGE LIMITER",
+      "page": 140
+     },
+     {
+      "name": "TOUCH SCREEN MODE",
+      "page": 141
+     }
+    ]
+   },
+   {
+    "name": "SHOOTING SETTING",
+    "items": [
+     {
+      "name": "SELF-TIMER",
+      "page": 143
+     },
+     {
+      "name": "SAVE SELF-TIMER SETTING",
+      "page": 144
+     },
+     {
+      "name": "SELF-TIMER LAMP",
+      "page": 144
+     },
+     {
+      "name": "INTERVAL TIMER SHOOTING",
+      "page": 145
+     },
+     {
+      "name": "AE BKT SETTING",
+      "page": 147
+     },
+     {
+      "name": "FILM SIMULATION BKT",
+      "page": 147
+     },
+     {
+      "name": "FOCUS BKT SETTING",
+      "page": 147
+     },
+     {
+      "name": "PHOTOMETRY",
+      "page": 147
+     },
+     {
+      "name": "SHUTTER TYPE",
+      "page": 148
+     },
+     {
+      "name": "FLICKER REDUCTION",
+      "page": 149
+     },
+     {
+      "name": "ISO",
+      "page": 149
+     },
+     {
+      "name": "IS MODE",
+      "page": 150
+     },
+     {
+      "name": "35mm FORMAT MODE",
+      "page": 151
+     },
+     {
+      "name": "WIRELESS COMMUNICATION",
+      "page": 152
+     }
+    ]
+   },
+   {
+    "name": "FLASH SETTING",
+    "items": [
+     {
+      "name": "FLASH FUNCTION SETTING",
+      "page": 153
+     },
+     {
+      "name": "RED EYE REMOVAL",
+      "page": 153
+     },
+     {
+      "name": "TTL-LOCK MODE",
+      "page": 154
+     },
+     {
+      "name": "LED LIGHT SETTING",
+      "page": 154
+     },
+     {
+      "name": "COMMANDER SETTING",
+      "page": 155
+     },
+     {
+      "name": "CH SETTING",
+      "page": 155
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "group": "Movie Menus",
+  "key": "Movie",
+  "categories": [
+   {
+    "name": "MOVIE SETTING",
+    "items": [
+     {
+      "name": "MOVIE MODE",
+      "page": 156
+     },
+     {
+      "name": "FILE FORMAT",
+      "page": 157
+     },
+     {
+      "name": "MOVIE COMPRESSION",
+      "page": 158
+     },
+     {
+      "name": "FIX MOVIE CROP MAGNIFICATION",
+      "page": 159
+     },
+     {
+      "name": "F-Log/HLG/RAW RECORDING",
+      "page": 160
+     },
+     {
+      "name": "4K MOVIE OUTPUT",
+      "page": 162
+     },
+     {
+      "name": "FULL HD MOVIE OUTPUT",
+      "page": 162
+     },
+     {
+      "name": "HDMI OUTPUT INFO DISPLAY",
+      "page": 163
+     },
+     {
+      "name": "4K HDMI STANDBY QUALITY",
+      "page": 163
+     },
+     {
+      "name": "HDMI REC CONTROL",
+      "page": 163
+     },
+     {
+      "name": "PHOTOMETRY",
+      "page": 163
+     },
+     {
+      "name": "IS MODE",
+      "page": 164
+     },
+     {
+      "name": "IS MODE BOOST",
+      "page": 164
+     },
+     {
+      "name": "ISO",
+      "page": 165
+     },
+     {
+      "name": "ZEBRA SETTING",
+      "page": 165
+     },
+     {
+      "name": "ZEBRA LEVEL",
+      "page": 165
+     },
+     {
+      "name": "MOVIE OPTIMIZED CONTROL",
+      "page": 166
+     },
+     {
+      "name": "TALLY LIGHT",
+      "page": 166
+     },
+     {
+      "name": "EDIT/SAVE CUSTOM SETTING",
+      "page": 167
+     },
+     {
+      "name": "WIRELESS COMMUNICATION",
+      "page": 167
+     }
+    ]
+   },
+   {
+    "name": "IMAGE QUALITY SETTING",
+    "items": [
+     {
+      "name": "FILM SIMULATION",
+      "page": 168
+     },
+     {
+      "name": "MONOCHROMATIC COLOR",
+      "page": 168
+     },
+     {
+      "name": "DYNAMIC RANGE",
+      "page": 169
+     },
+     {
+      "name": "WHITE BALANCE",
+      "page": 169
+     },
+     {
+      "name": "TONE CURVE",
+      "page": 169
+     },
+     {
+      "name": "COLOR",
+      "page": 169
+     },
+     {
+      "name": "SHARPNESS",
+      "page": 170
+     },
+     {
+      "name": "HIGH ISO NR",
+      "page": 170
+     },
+     {
+      "name": "INTERFRAME NR",
+      "page": 170
+     },
+     {
+      "name": "PERIPHERAL LIGHT CORRECTION",
+      "page": 171
+     },
+     {
+      "name": "MOUNT ADAPTOR SETTING",
+      "page": 171
+     }
+    ]
+   },
+   {
+    "name": "AF/MF SETTING",
+    "items": [
+     {
+      "name": "FOCUS AREA",
+      "page": 172
+     },
+     {
+      "name": "AF MODE",
+      "page": 172
+     },
+     {
+      "name": "AF-C CUSTOM SETTING",
+      "page": 173
+     },
+     {
+      "name": "AF ILLUMINATOR",
+      "page": 173
+     },
+     {
+      "name": "FACE/EYE DETECTION SETTING",
+      "page": 174
+     },
+     {
+      "name": "MF ASSIST",
+      "page": 174
+     },
+     {
+      "name": "FOCUS CHECK",
+      "page": 175
+     },
+     {
+      "name": "INSTANT AF SETTING",
+      "page": 175
+     },
+     {
+      "name": "DEPTH-OF-FIELD SCALE",
+      "page": 175
+     },
+     {
+      "name": "AF RANGE LIMITER",
+      "page": 175
+     },
+     {
+      "name": "TOUCH SCREEN MODE",
+      "page": 176
+     },
+     {
+      "name": "FOCUS CHECK LOCK",
+      "page": 178
+     }
+    ]
+   },
+   {
+    "name": "AUDIO SETTING",
+    "items": [
+     {
+      "name": "INTERNAL MIC LEVEL ADJUSTMENT",
+      "page": 179
+     },
+     {
+      "name": "EXTERNAL MIC LEVEL ADJUSTMENT",
+      "page": 179
+     },
+     {
+      "name": "MIC JACK SETTING",
+      "page": 180
+     },
+     {
+      "name": "MIC LEVEL LIMITER",
+      "page": 180
+     },
+     {
+      "name": "WIND FILTER",
+      "page": 180
+     },
+     {
+      "name": "LOW CUT FILTER",
+      "page": 180
+     },
+     {
+      "name": "HEADPHONES VOLUME",
+      "page": 180
+     }
+    ]
+   },
+   {
+    "name": "TIME CODE SETTING",
+    "items": [
+     {
+      "name": "TIME CODE DISPLAY",
+      "page": 181
+     },
+     {
+      "name": "START TIME SETTING",
+      "page": 181
+     },
+     {
+      "name": "COUNT UP SETTING",
+      "page": 181
+     },
+     {
+      "name": "DROP FRAME",
+      "page": 182
+     },
+     {
+      "name": "HDMI TIME CODE OUTPUT",
+      "page": 182
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "group": "The Playback Menu",
+  "key": "Playback",
+  "categories": [
+   {
+    "name": "PLAYBACK MENU",
+    "items": [
+     {
+      "name": "SWITCH SLOT",
+      "page": 189
+     },
+     {
+      "name": "RAW CONVERSION",
+      "page": 190
+     },
+     {
+      "name": "ERASE",
+      "page": 192
+     },
+     {
+      "name": "SIMULTANEOUS DELETE",
+      "page": 194
+     },
+     {
+      "name": "CROP",
+      "page": 194
+     },
+     {
+      "name": "RESIZE",
+      "page": 195
+     },
+     {
+      "name": "PROTECT",
+      "page": 196
+     },
+     {
+      "name": "IMAGE ROTATE",
+      "page": 197
+     },
+     {
+      "name": "RED EYE REMOVAL",
+      "page": 198
+     },
+     {
+      "name": "VOICE MEMO SETTING",
+      "page": 199
+     },
+     {
+      "name": "RATING",
+      "page": 200
+     },
+     {
+      "name": "COPY",
+      "page": 201
+     },
+     {
+      "name": "IMAGE TRANSFER ORDER",
+      "page": 202
+     },
+     {
+      "name": "WIRELESS COMMUNICATION",
+      "page": 203
+     },
+     {
+      "name": "PHOTOBOOK ASSIST",
+      "page": 204
+     },
+     {
+      "name": "PRINT ORDER (DPOF)",
+      "page": 206
+     },
+     {
+      "name": "instax PRINTER PRINT",
+      "page": 207
+     },
+     {
+      "name": "DISP ASPECT",
+      "page": 208
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "group": "Setup Menus",
+  "key": "Setup",
+  "categories": [
+   {
+    "name": "USER SETTING",
+    "items": [
+     {
+      "name": "FORMAT",
+      "page": 210
+     },
+     {
+      "name": "DATE/TIME",
+      "page": 211
+     },
+     {
+      "name": "TIME DIFFERENCE",
+      "page": 211
+     },
+     {
+      "name": "言語/LANG.",
+      "page": 212
+     },
+     {
+      "name": "MY MENU SETTING",
+      "page": 212
+     },
+     {
+      "name": "SENSOR CLEANING",
+      "page": 213
+     },
+     {
+      "name": "BATTERY AGE",
+      "page": 213
+     },
+     {
+      "name": "RESET",
+      "page": 214
+     },
+     {
+      "name": "REGULATORY",
+      "page": 214
+     }
+    ]
+   },
+   {
+    "name": "SOUND SETTING",
+    "items": [
+     {
+      "name": "AF BEEP VOL.",
+      "page": 215
+     },
+     {
+      "name": "SELF-TIMER BEEP VOL.",
+      "page": 215
+     },
+     {
+      "name": "OPERATION VOL.",
+      "page": 216
+     },
+     {
+      "name": "SHUTTER VOLUME",
+      "page": 216
+     },
+     {
+      "name": "SHUTTER SOUND",
+      "page": 216
+     },
+     {
+      "name": "PLAYBACK VOLUME",
+      "page": 216
+     }
+    ]
+   },
+   {
+    "name": "SCREEN SETTING",
+    "items": [
+     {
+      "name": "EVF BRIGHTNESS",
+      "page": 217
+     },
+     {
+      "name": "EVF COLOR",
+      "page": 217
+     },
+     {
+      "name": "EVF COLOR ADJUSTMENT",
+      "page": 217
+     },
+     {
+      "name": "LCD BRIGHTNESS",
+      "page": 218
+     },
+     {
+      "name": "LCD COLOR",
+      "page": 218
+     },
+     {
+      "name": "LCD COLOR ADJUSTMENT",
+      "page": 218
+     },
+     {
+      "name": "IMAGE DISP.",
+      "page": 219
+     },
+     {
+      "name": "AUTOROTATE DISPLAYS",
+      "page": 219
+     },
+     {
+      "name": "PREVIEW EXP./WB IN MANUAL MODE",
+      "page": 220
+     },
+     {
+      "name": "NATURAL LIVE VIEW",
+      "page": 220
+     },
+     {
+      "name": "F-Log VIEW ASSIST",
+      "page": 221
+     },
+     {
+      "name": "FRAMING GUIDELINE",
+      "page": 221
+     },
+     {
+      "name": "AUTOROTATE PB",
+      "page": 222
+     },
+     {
+      "name": "PLAYBACK MAGNIFICATION",
+      "page": 222
+     },
+     {
+      "name": "FOCUS SCALE UNITS",
+      "page": 222
+     },
+     {
+      "name": "DUAL DISPLAY SETTING",
+      "page": 223
+     },
+     {
+      "name": "DISP. CUSTOM SETTING",
+      "page": 223
+     },
+     {
+      "name": "LARGE INDICATORS MODE(EVF)",
+      "page": 224
+     },
+     {
+      "name": "LARGE INDICATORS MODE(LCD)",
+      "page": 224
+     },
+     {
+      "name": "LARGE INDICATORS DISP. SETTING",
+      "page": 225
+     },
+     {
+      "name": "INFORMATION CONTRAST ADJ.",
+      "page": 225
+     },
+     {
+      "name": "SUB MONITOR SETTING",
+      "page": 226
+     },
+     {
+      "name": "SUB MONITOR BACKGROUND COLOR",
+      "page": 228
+     },
+     {
+      "name": "Q MENU BACKGROUND",
+      "page": 229
+     }
+    ]
+   },
+   {
+    "name": "BUTTON/DIAL SETTING",
+    "items": [
+     {
+      "name": "FOCUS LEVER SETTING",
+      "page": 230
+     },
+     {
+      "name": "EDIT/SAVE QUICK MENU",
+      "page": 230
+     },
+     {
+      "name": "FUNCTION (Fn) SETTING",
+      "page": 231
+     },
+     {
+      "name": "COMMAND DIAL SETTING",
+      "page": 231
+     },
+     {
+      "name": "COMMAND DIAL DIRECTION",
+      "page": 232
+     },
+     {
+      "name": "SHUTTER AF",
+      "page": 232
+     },
+     {
+      "name": "SHUTTER AE",
+      "page": 233
+     },
+     {
+      "name": "SHOOT WITHOUT LENS",
+      "page": 234
+     },
+     {
+      "name": "SHOOT WITHOUT CARD",
+      "page": 234
+     },
+     {
+      "name": "FOCUS RING",
+      "page": 235
+     },
+     {
+      "name": "FOCUS RING OPERATION",
+      "page": 235
+     },
+     {
+      "name": "AE/AF-LOCK MODE",
+      "page": 236
+     },
+     {
+      "name": "AWB-LOCK MODE",
+      "page": 236
+     },
+     {
+      "name": "EXPO. COMP. BUTTON SETTING",
+      "page": 236
+     },
+     {
+      "name": "TOUCH SCREEN SETTING",
+      "page": 237
+     },
+     {
+      "name": "LOCK",
+      "page": 238
+     }
+    ]
+   },
+   {
+    "name": "POWER MANAGEMENT",
+    "items": [
+     {
+      "name": "AUTO POWER OFF",
+      "page": 239
+     },
+     {
+      "name": "PERFORMANCE",
+      "page": 240
+     },
+     {
+      "name": "SHOOTING STAND BY MODE",
+      "page": 241
+     },
+     {
+      "name": "AUTO POWER SAVE",
+      "page": 241
+     },
+     {
+      "name": "AUTO POWER OFF TEMP.",
+      "page": 241
+     }
+    ]
+   },
+   {
+    "name": "SAVE DATA SETTING",
+    "items": [
+     {
+      "name": "FRAME NO.",
+      "page": 242
+     },
+     {
+      "name": "SAVE ORG IMAGE",
+      "page": 243
+     },
+     {
+      "name": "EDIT FILE NAME",
+      "page": 243
+     },
+     {
+      "name": "CARD SLOT SETTING",
+      "page": 243
+     },
+     {
+      "name": "SELECT SLOT(SEQUENTIAL)",
+      "page": 244
+     },
+     {
+      "name": "SELECT FOLDER",
+      "page": 245
+     },
+     {
+      "name": "COPYRIGHT INFO",
+      "page": 245
+     }
+    ]
+   },
+   {
+    "name": "CONNECTION SETTING",
+    "items": [
+     {
+      "name": "Bluetooth SETTINGS",
+      "page": 246
+     },
+     {
+      "name": "NETWORK SETTING",
+      "page": 247
+     },
+     {
+      "name": "instax PRINTER CONNECTION SETTING",
+      "page": 248
+     },
+     {
+      "name": "CONNECTION MODE",
+      "page": 249
+     },
+     {
+      "name": "USB POWER SUPPLY SETTING",
+      "page": 250
+     },
+     {
+      "name": "GENERAL SETTINGS",
+      "page": 251
+     },
+     {
+      "name": "INFORMATION",
+      "page": 251
+     },
+     {
+      "name": "RESET WIRELESS SETTING",
+      "page": 251
+     }
+    ]
+   }
+  ]
+ }
+]
